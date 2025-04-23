@@ -34,7 +34,7 @@
     }
 
     .hero-content p {
-      margin: 0.5rem 0;
+      margin: 0.5rem 0 1.5rem 0;
       font-size: 1.1rem;
       line-height: 1.4;
       max-width: 600px;
@@ -47,7 +47,7 @@
       width: 100%;
       max-width: 1200px;
       height: 500px;
-      margin: 1.5rem auto 1rem;
+      margin: 0 auto;
       overflow: visible;
     }
 
@@ -137,11 +137,33 @@
     }
 
     .cta-buttons {
-      margin-top: 1rem;
+      margin-top: 2.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .cta-button {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.8rem 1.5rem;
+      margin: 0 0.5rem;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+    }
+
+    .cta-button img {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
     }
 
     footer {
-      margin-top: 1rem;
+      margin-top: 2rem;
+      padding: 1.5rem 0;
     }
 
     @media (max-width: 768px) {
@@ -160,6 +182,7 @@
       .hero-content p {
         font-size: 1rem;
         padding: 0 1rem;
+        margin-bottom: 1rem;
       }
 
       .slider-wrapper {
@@ -188,7 +211,22 @@
       }
 
       .cta-buttons {
-        margin-top: 0.5rem;
+        margin-top: 2rem;
+        padding-bottom: 1rem;
+      }
+
+      .cta-button {
+        padding: 0.6rem 1.2rem;
+      }
+
+      .cta-button img {
+        width: 20px;
+        height: 20px;
+      }
+
+      footer {
+        margin-top: 1.5rem;
+        padding: 1rem 0;
       }
     }
   </style>
