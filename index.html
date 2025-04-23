@@ -44,9 +44,9 @@
 
     .slider-wrapper {
       position: relative;
-      width: 90%;
-      max-width: 1000px;
-      height: 500px;
+      width: 95%;
+      max-width: 900px;
+      height: 520px;
       margin: 0 auto;
       overflow: visible;
     }
@@ -63,8 +63,8 @@
 
     .slide {
       position: absolute;
-      width: 280px;
-      height: 100%;
+      width: 260px;
+      height: 85%;
       transition: all 0.5s ease-in-out;
       overflow: hidden;
       border-radius: 20px;
@@ -86,7 +86,7 @@
 
     .slide.prev {
       opacity: 0.5;
-      transform: translateX(-80%) scale(0.85);
+      transform: translateX(-70%) scale(0.85);
       filter: blur(3px);
       z-index: 1;
     }
@@ -100,7 +100,7 @@
 
     .slide.next {
       opacity: 0.5;
-      transform: translateX(80%) scale(0.85);
+      transform: translateX(70%) scale(0.85);
       filter: blur(3px);
       z-index: 1;
     }
@@ -109,25 +109,30 @@
       display: flex;
       gap: 0.5rem;
       position: absolute;
-      bottom: 1rem;
+      bottom: 0;
       left: 50%;
       transform: translateX(-50%);
       z-index: 3;
+      background: rgba(0, 0, 0, 0.4);
+      padding: 8px 12px;
+      border-radius: 20px;
     }
 
     .slider-nav a {
-      width: 10px;
-      height: 10px;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
-      background-color: #fff;
+      background-color: rgba(255, 255, 255, 0.5);
       opacity: 0.5;
       transition: all 0.3s ease;
       cursor: pointer;
+      border: none;
     }
 
     .slider-nav a:hover {
-      opacity: 1;
+      opacity: 0.8;
       transform: scale(1.2);
+      background-color: rgba(255, 255, 255, 0.8);
     }
 
     .slider-nav a.active {
@@ -186,8 +191,8 @@
       }
 
       .slider-wrapper {
-        width: 95%;
-        height: 400px;
+        width: 98%;
+        height: 420px;
       }
 
       .slider {
@@ -195,7 +200,8 @@
       }
 
       .slide {
-        width: 220px;
+        width: 200px;
+        height: 85%;
       }
 
       .slide.active {
@@ -203,11 +209,11 @@
       }
 
       .slide.prev {
-        transform: translateX(-75%) scale(0.8);
+        transform: translateX(-65%) scale(0.8);
       }
 
       .slide.next {
-        transform: translateX(75%) scale(0.8);
+        transform: translateX(65%) scale(0.8);
       }
 
       .cta-buttons {
@@ -222,6 +228,15 @@
       .cta-button img {
         width: 20px;
         height: 20px;
+      }
+
+      .slider-nav {
+        padding: 6px 10px;
+      }
+
+      .slider-nav a {
+        width: 6px;
+        height: 6px;
       }
 
       footer {
