@@ -7,28 +7,39 @@
   <link rel="stylesheet" href="styles.css" />
   <style>
     .navbar {
-      padding: 0.5rem 2rem;
+      padding: 0.25rem 2rem;
+      margin-bottom: 0;
     }
 
     .hero {
-      padding-top: 1rem;
+      padding-top: 0;
+      margin-top: 0;
     }
 
     .hero-content {
       text-align: center;
-      padding: 0 1rem;
+      padding: 0;
     }
 
     .hero-content h1 {
-      margin-bottom: 0.5rem;
+      margin: 0;
+      font-size: 2.5rem;
+      line-height: 1.2;
     }
 
     .hero-content h2 {
-      margin-bottom: 0.5rem;
+      margin: 0.25rem 0;
+      font-size: 1.8rem;
+      line-height: 1.2;
     }
 
     .hero-content p {
-      margin-bottom: 1rem;
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+      line-height: 1.4;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .slider-wrapper {
@@ -36,8 +47,8 @@
       width: 100%;
       max-width: 1200px;
       height: 500px;
-      margin: 1rem auto;
-      overflow: hidden;
+      margin: 1.5rem auto 1rem;
+      overflow: visible;
     }
 
     .slider {
@@ -47,6 +58,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 1rem;
     }
 
     .slide {
@@ -133,13 +145,30 @@
     }
 
     @media (max-width: 768px) {
-      .hero {
-        padding-top: 0.5rem;
+      .navbar {
+        padding: 0.25rem 1rem;
+      }
+
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .hero-content h2 {
+        font-size: 1.5rem;
+      }
+
+      .hero-content p {
+        font-size: 1rem;
+        padding: 0 1rem;
       }
 
       .slider-wrapper {
         height: 400px;
-        margin: 0.5rem auto;
+        margin: 1rem auto 0.5rem;
+      }
+
+      .slider {
+        margin-top: 0.5rem;
       }
 
       .slide {
