@@ -75,14 +75,14 @@
       padding: 0;
       background: transparent;
       border: none;
-      border-radius: 12px;
+      border-radius: 24px;
     }
 
     .slide img {
       width: 100%;
       height: 100%;
-      object-fit: contain;
-      border-radius: 12px;
+      object-fit: cover;
+      border-radius: 24px;
       display: block;
       margin: 0;
       padding: 0;
@@ -93,17 +93,21 @@
       opacity: 1;
       transform: translateX(0) scale(1.1);
       z-index: 2;
+      border-radius: 24px;
+      overflow: hidden;
     }
 
     .slide.active img {
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-      border-radius: 12px;
+      border-radius: 24px;
     }
 
     .slide.prev, .slide.next {
       opacity: 0.5;
       filter: blur(3px);
       z-index: 1;
+      border-radius: 24px;
+      overflow: hidden;
     }
 
     .slide.prev {
@@ -210,24 +214,24 @@
 
       .slide {
         width: 200px;
-        border-radius: 10px;
+        border-radius: 20px;
       }
 
       .slide img {
-        border-radius: 10px;
+        border-radius: 20px;
+      }
+
+      .slide.active {
+        border-radius: 20px;
       }
 
       .slide.active img {
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
+        border-radius: 20px;
       }
 
-      .slide.prev {
-        transform: translateX(-65%) scale(0.8);
-      }
-
-      .slide.next {
-        transform: translateX(65%) scale(0.8);
+      .slide.prev, .slide.next {
+        border-radius: 20px;
       }
 
       .cta-buttons {
